@@ -1,0 +1,1 @@
+toml<br>[build]<br> publish = "public"<br> command = "hugo --minify"<br><br>[build.environment]<br> HUGO_VERSION = "0.125.6" # match your local `hugo version`<br> HUGO_ENV = "production"<br>
