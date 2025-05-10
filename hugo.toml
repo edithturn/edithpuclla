@@ -1,0 +1,16 @@
+baseURL = "https://edithpuclla.com/"
+title   = "Edith Puclla"
+theme   = "papermod"
+languageCode = "en-us"
+
+[params]
+  description = "Developer • Speaker • Lifelong learner"
+  ShowReadingTime = true
+  defaultTheme = "auto"
+
+[[menu.main]]
+  name = "Blog"
+  url  = "/blog"
+[[menu.main]]
+  name = "About"
+  url  = "/about"
