@@ -1,11 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Edith Puclla</title>
     <link>http://localhost:1313/categories/</link>
     <description>Recent content in Categories on Edith Puclla</description>
-    <generator>Hugo -- 0.147.2</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
+    <lastBuildDate>Sun, 06 Jul 2025 20:00:00 +0100</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Outside Work Posts</title>
+      <link>http://localhost:1313/categories/outside-work/</link>
+      <pubDate>Sun, 06 Jul 2025 20:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/categories/outside-work/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sport</title>
+      <link>http://localhost:1313/categories/sport/</link>
+      <pubDate>Sun, 06 Jul 2025 20:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/categories/sport/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Developer Posts</title>
+      <link>http://localhost:1313/categories/developer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/developer/</guid>
+      <description>&lt;h2 id=&#34;my-latest-developer-blog-posts-external-links&#34;&gt;My Latest Developer Blog Posts (External Links)&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;  &lt;li&gt;&#xA;    &lt;a href=&#34;[LINK_PLACEHOLDER_1]&#34;&gt;Managing PostgreSQL on Kubernetes with Percona Everest&#39;s REST API&lt;/a&gt;&#xA;    &lt;span&gt;- June 27, 2025&lt;/span&gt;&#xA;  &lt;/li&gt;&#xA;  &lt;li&gt;&#xA;    &lt;a href=&#34;[LINK_PLACEHOLDER_2]&#34;&gt;Using Percona Everest Operator CRDs to Manage Databases in Kubernetes&lt;/a&gt;&#xA;    &lt;span&gt;- June 25, 2025&lt;/span&gt;&#xA;  &lt;/li&gt;&#xA;  &lt;li&gt;&#xA;    &lt;a href=&#34;[LINK_PLACEHOLDER_3]&#34;&gt;New in Percona Everest 1.6.0: Easily Deploy PMM with a Single Helm Command&lt;/a&gt;&#xA;    &lt;span&gt;- May 15, 2025&lt;/span&gt;&#xA;  &lt;/li&gt;&#xA;  &lt;li&gt;&#xA;    &lt;a href=&#34;[LINK_PLACEHOLDER_4]&#34;&gt;Percona Everest: An Open Source Solution for MongoDB Sharding and Backups&lt;/a&gt;&#xA;    &lt;span&gt;- January 16, 2025&lt;/span&gt;&#xA;  &lt;/li&gt;&#xA;  &lt;li&gt;&#xA;    &lt;a href=&#34;[LINK_PLACEHOLDER_5]&#34;&gt;Announcing ARM Support in Percona Operator for MongoDB&lt;/a&gt;&#xA;    &lt;span&gt;- May 30, 2024&lt;/span&gt;&#xA;  &lt;/li&gt;&#xA;  &lt;li&gt;&#xA;    &lt;a href=&#34;[LINK_PLACEHOLDER_6]&#34;&gt;Switch PostgreSQL Environments Across AWS, GCP, and k3d Using Kubernetes Contexts&lt;/a&gt;&#xA;    &lt;span&gt;- April 17, 2024&lt;/span&gt;&#xA;  &lt;/li&gt;&#xA;  &lt;li&gt;&#xA;    &lt;a href=&#34;[LINK_PLACEHOLDER_7]&#34;&gt;Ask Me Anything About MySQL 5.7 to 8.0 Post EOL&lt;/a&gt;&#xA;    &lt;span&gt;- April 9, 2024&lt;/span&gt;&#xA;  &lt;/li&gt;&#xA;  &lt;li&gt;&#xA;    &lt;a href=&#34;[LINK_PLACEHOLDER_8]&#34;&gt;Easy Way to Provision a PostgreSQL Cluster on Kubernetes&lt;/a&gt;&#xA;    &lt;span&gt;- March 6, 2024&lt;/span&gt;&#xA;  &lt;/li&gt;&#xA;  &lt;li&gt;&#xA;    &lt;a href=&#34;[LINK_PLACEHOLDER_9]&#34;&gt;Backing up and Restoring to AWS S3 With Percona Kubernetes Operators&lt;/a&gt;&#xA;    &lt;span&gt;- February 22, 2024&lt;/span&gt;&#xA;  &lt;/li&gt;&#xA;  &lt;li&gt;&#xA;    &lt;a href=&#34;[LINK_PLACEHOLDER_10]&#34;&gt;Exploring the Kubernetes Application Lifecycle With Percona&lt;/a&gt;&#xA;    &lt;span&gt;- February 20, 2024&lt;/span&gt;&#xA;  &lt;/li&gt;&#xA;  &lt;li&gt;&#xA;    &lt;a href=&#34;[LINK_PLACEHOLDER_11]&#34;&gt;Scalable Solutions with Percona Distribution for PostgreSQL (Part 2): Using Citus&lt;/a&gt;&#xA;    &lt;span&gt;- October 20, 2023&lt;/span&gt;&#xA;  &lt;/li&gt;&#xA;  &lt;li&gt;&#xA;    &lt;a href=&#34;[LINK_PLACEHOLDER_12]&#34;&gt;Scalable Solutions With Percona Distribution for PostgreSQL (Part 1): Set Up Three PostgreSQL Database Instances&lt;/a&gt;&#xA;    &lt;span&gt;- October 19, 2023&lt;/span&gt;&#xA;  &lt;/li&gt;&#xA;  &lt;li&gt;&#xA;    &lt;a href=&#34;[LINK_PLACEHOLDER_13]&#34;&gt;Contribute to Open Source With Percona and Hacktoberfest&lt;/a&gt;&#xA;    &lt;span&gt;- September 21, 2022&lt;/span&gt;&#xA;  &lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
   </channel>
 </rss>

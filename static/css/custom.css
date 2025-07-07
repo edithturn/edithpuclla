@@ -1,0 +1,592 @@
+body {
+  background: #23272a;
+  color: #f5f6fa;
+  font-family: 'Inter', 'Segoe UI', 'Nunito Sans', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-width: 320px; /* Ensure a minimum width to prevent layout issues */
+}
+
+.main-flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 1400px; /* Adjusted max-width for the overall content container */
+  margin: 40px auto 0 auto; /* Center the overall content horizontally */
+  gap: 56px;
+}
+
+.main-photo-rect-outer {
+  flex: 0 0 320px;
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-end;
+  position: fixed; /* Keep left panel fixed */
+  top: 40px; /* Aligns with the top margin of .main-flex-row */
+  width: 320px;
+  left: calc(50% - (1400px / 2)); /* Aligns left edge with the centered .main-flex-row */
+  z-index: 10;
+  height: calc(100vh - 80px); /* Make it take up most of the viewport height */
+}
+
+.main-photo-rect-bg {
+  background: #2a2a2a;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+  width: 100%;
+  display: flex;
+  flex-direction: column; /* Allow content to stack vertically */
+  align-items: center;
+  justify-content: flex-start; /* Align content to the top */
+  padding-top: 40px; /* Add padding to the top for spacing */
+  box-sizing: border-box; /* Include padding in height calculation */
+}
+
+.profile-photo-rect-centered {
+  width: 260px;
+  height: 340px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+  background: #fff;
+  border: 2px solid transparent;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-photo-rect-centered:hover {
+  border: 2px solid #80cbc4;
+  box-shadow: 0 0 12px #80cbc4;
+}
+
+.main-banner-bio {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 0;
+  max-width: 100%;
+  margin-left: 376px; /* Offset to account for fixed left panel (320px) + gap (56px) */
+}
+
+.profile-bio-rect {
+  width: 100%;
+  max-width: 1100px;
+  margin: 32px 0 0 0;
+  text-align: left;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #f5f6fa;
+}
+
+@media (max-width: 1400px) {
+  .main-photo-rect-outer {
+    left: calc(50% - (100vw / 2)); /* Re-aligns the fixed sidebar as the screen shrinks */
+  }
+}
+
+@media (max-width: 900px) {
+  .main-flex-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin: 20px auto 0 auto;
+  }
+  .main-photo-rect-outer {
+    position: static; /* Revert to static on smaller screens */
+    top: auto;
+    left: auto;
+    width: auto; /* Remove fixed width */
+    height: auto; /* Remove fixed height */
+    flex: none; /* Remove flex sizing */
+    margin-bottom: 12px; /* Add some space below when stacked */
+  }
+  .main-photo-rect-bg {
+    min-height: 320px;
+    padding-top: 20px; /* Adjust padding for smaller screens */
+  }
+  .main-banner-bio {
+    margin-left: 0; /* Remove offset */
+    width: 100%;
+  }
+  .profile-photo-rect-centered {
+    width: 210px;
+    height: 270px;
+  }
+  nav.top-nav {
+    margin-bottom: 24px; /* Adjust margin for menu when stacked */
+  }
+}
+
+nav.top-nav {
+  background-color: transparent; /* Revert to transparent */
+  padding: 16px 0; /* Adjust padding */
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  border-bottom: 1px solid #333; /* Gentle divider */
+  margin-bottom: 20px; /* Space below the divider */
+  border-radius: 0; /* Remove rounded corners */
+  box-shadow: none; /* Remove shadow */
+  position: relative;
+  z-index: 20;
+}
+nav.top-nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center; /* Center the menu items */
+}
+nav.top-nav li {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+nav.top-nav a {
+  color: #e0e0e0;
+  text-decoration: none;
+  margin: 0 18px; /* Slightly increase margin between items */
+  font-weight: 500;
+  font-size: 1rem; /* Adjust font size */
+  position: relative;
+  padding-bottom: 4px; /* Space for the underline */
+  transition: all 0.2s ease-in-out; /* Smoother transition */
+  border: none; /* Ensure no borders */
+  background: none; /* Ensure no background */
+}
+/* Hover underline and color */
+nav.top-nav a:hover {
+  color: #f4b400;
+}
+nav.top-nav a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #f4b400;
+  transition: 0.3s ease-in-out;
+}
+nav.top-nav a:hover::after {
+  width: 100%;
+}
+/* Active menu link (e.g., Home) */
+nav.top-nav a.active {
+  color: #80cbc4;
+}
+nav.top-nav a.active::after {
+  background-color: #80cbc4;
+}
+
+.profile-photo-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px; /* Space between photo/info and social icons */
+}
+
+.profile-name {
+  font-size: 2.20rem;
+  font-weight: 700;
+  color: #f5f6fa;
+  margin-top: 16px;
+  margin-bottom: 4px;
+}
+
+.profile-desc {
+  font-size: 1.08rem;
+  color: #e0e0e0;
+  margin-bottom: 24px;
+}
+
+.profile-socials {
+  display: flex;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.social-icon {
+  color: #80cbc4;
+  border: 1.5px solid #d7e57cc0;
+  padding: 6px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  margin: 4px;
+  font-size: 16px; /* Adjust icon size */
+  transition: all 0.25s ease-in-out;
+}
+.social-icon svg {
+  display: block;
+  fill: currentColor;
+  transition: fill 0.2s ease;
+}
+.social-icon:hover, .social-icon:focus {
+  border-color: #f4b400;
+  box-shadow: 0 0 6px #f4b400;
+  color: #f4b400;
+  transform: scale(1.05);
+}
+
+a, a:visited {
+  color: #80cbc4;
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  color: #f4b400;
+  text-decoration: underline;
+}
+
+.intro-text {
+  background: #2a2a2a;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+  padding: 40px;
+  margin-top: 0px; /* Further reduced margin-top to decrease space */
+  width: 100%;
+  max-width: 1100px;
+  box-sizing: border-box;
+  line-height: 1.8;
+}
+
+.intro-section p {
+  margin-bottom: 1em; /* Add space between paragraphs */
+}
+
+.intro-highlight {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #f5f6fa;
+  margin-bottom: 1.5em;
+}
+
+.personal-note {
+  font-style: italic;
+  color: #b0b0b0;
+  margin-top: 1.5em;
+}
+
+.section-divider {
+  border: 0;
+  height: 1px;
+  background: #444;
+  margin: 5px 0;
+}
+
+.banner-col {
+  flex: 1 1 0;
+  min-width: 300px;
+  max-width: 700px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1100px;
+  margin-bottom: 0;
+  background: #2a2a2a;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+}
+
+.custom-banner {
+  width: 100%;
+  height: 330px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 0;
+  border-radius: 12px;
+  background: #2a2a2a;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+}
+
+.banner-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 65%;
+  display: block;
+}
+
+.top-nav ul ul.sub-menu {
+  display: none; /* Hide sub-menus by default */
+  position: absolute;
+  background-color: rgba(20, 20, 20, 0.9); /* almost black */
+  backdrop-filter: blur(4px); /* Apply blur to sub-menu */
+  min-width: 300px; /* Increased width to accommodate longer text */
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 999; /* Ensure it appears on top of other elements */
+  padding: 12px 10px; /* Adjusted padding for sub-menu items */
+  list-style: none;
+  top: 100%; /* Position right below the parent li */
+  left: 0; /* Align left edge with parent li */
+  border-radius: 8px; /* Apply rounded corners to sub-menu */
+}
+
+.top-nav ul li:hover > ul.sub-menu {
+  display: block; /* Show sub-menu on hover */
+}
+
+.top-nav ul ul.sub-menu li {
+  padding: 0; /* Remove any default padding */
+  max-width: none; /* Ensure no max-width constraints */
+  overflow: visible; /* Ensure content is not hidden */
+}
+
+.top-nav ul ul.sub-menu li a {
+  color: var(--primary-text);
+  padding: 12px 10px; /* Reduced horizontal padding */
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  white-space: normal; /* Allow text to wrap */
+}
+
+.top-nav ul ul.sub-menu li a:hover {
+  background-color: var(--accent-color);
+  color: var(--code-background);
+}
+
+.taxonomy-page {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.taxonomy-page h1 {
+  font-size: 2rem;
+  color: #f4b400;
+  margin-bottom: 2rem;
+}
+
+.post-card {
+  background-color: #2a2a2a;
+  padding: 20px;
+  margin-bottom: 24px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease;
+}
+
+.post-card:hover {
+  transform: scale(1.02);
+}
+
+.post-card a {
+  font-size: 1.2rem;
+  color: #80cbc4;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.post-card a:hover {
+  text-decoration: underline;
+}
+
+.post-date {
+  display: block;
+  font-size: 0.9rem;
+  color: #aaaaaa;
+  margin-top: 4px;
+}
+
+.excerpt {
+  font-size: 1rem;
+  color: #dddddd;
+  margin-top: 12px;
+}
+
+.single-post {
+  max-width: 800px; /* Max width for readability */
+  margin: 40px auto; /* Center the content with top/bottom margin */
+  padding: 30px; /* Internal padding */
+  background-color: var(--card-background); /* Dark background for the article card */
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4); /* Deeper shadow for elevation */
+  color: var(--primary-text); /* Ensure text is readable */
+  line-height: 1.7;
+}
+
+.single-post h1 {
+  font-size: 2.8rem; /* Larger title */
+  color: var(--accent-color); /* Use accent color for headings */
+  margin-bottom: 0.8em; /* Space below title */
+  line-height: 1.2;
+}
+
+.single-post .post-meta {
+  font-size: 0.95rem;
+  color: var(--secondary-text); /* Subtler color for meta info */
+  margin-bottom: 2.5em; /* More space below metadata */
+  border-bottom: 1px solid var(--border-color); /* Divider below meta */
+  padding-bottom: 1em;
+}
+
+.single-post .post-meta a {
+  color: var(--link-color); /* Link color for categories/tags */
+  text-decoration: none;
+}
+
+.single-post .post-meta a:hover {
+  text-decoration: underline;
+}
+
+.single-post .post-content p {
+  margin-bottom: 1.2em;
+  font-size: 1.05rem;
+}
+
+.single-post .post-content h2 {
+  font-size: 2rem;
+  color: var(--accent-color);
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+.single-post .post-content h3 {
+  font-size: 1.6rem;
+  color: var(--accent-color);
+  margin-top: 1.8em;
+  margin-bottom: 0.8em;
+}
+
+.single-post .post-content strong {
+  color: var(--highlight-color);
+}
+
+.single-post .post-content em {
+  color: var(--secondary-text);
+}
+
+.single-post .post-content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 2em auto; /* Center images and add vertical space */
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+}
+
+.single-post .post-content blockquote {
+  border-left: 4px solid var(--link-color);
+  padding-left: 20px;
+  margin: 2em 0;
+  font-style: italic;
+  color: var(--secondary-text);
+}
+
+.single-post .post-content ul,
+.single-post .post-content ol {
+  margin: 1em 0 1em 2em;
+  padding: 0;
+}
+
+.single-post .post-content li {
+  margin-bottom: 0.5em;
+}
+
+.single-post .post-content a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+.single-post .post-content a:hover {
+  text-decoration: underline;
+}
+
+/* Styling for the new static blog posts section */
+.static-posts-section {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #2a2a2a;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.static-posts-section h2 {
+    color: var(--primary-accent-color);
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--primary-accent-color);
+    padding-bottom: 10px;
+}
+
+.static-posts-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.static-posts-section li {
+    background-color: #333;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    color: #f5f5f5;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+.static-posts-section li:hover {
+    background-color: #444;
+}
+
+.static-posts-section li a {
+    color: #f5f5f5;
+    text-decoration: none;
+}
+
+.static-posts-section li a:hover {
+    text-decoration: underline;
+    color: #f4b400; /* A shade of yellow */
+}
+
+.mini-footer {
+  text-align: center;
+  color: #bbbbbb;
+  font-size: 0.9rem;
+  margin-top: 16px;
+  line-height: 0.5;
+}
+
+.intro-section {
+  line-height: 1.7;
+  font-size: 1.05rem;
+  color: #ddd;
+  padding: 0 0 20px 0; /* Removed top padding to reduce space above headings */
+}
+
+.bio-highlight {
+  margin-bottom: 1.8rem;
+}
+
+.bio-highlight h3 {
+  color: #d8a01f; /* A slightly muted yellow */
+  font-size: 1.2rem;
+  margin-top: -20px; /* Further adjusted to pull the heading up */
+  margin-bottom: 0.4rem;
+}
+
+.flag {
+  font-weight: bold;
+}
+
+.highlight {
+  color: #90cdf4;
+  font-weight: bold;
+}
+
+.personal-note blockquote {
+  font-style: italic;
+  color: #aaa;
+  border-left: 4px solid #f4b400;
+  padding-left: 14px;
+  margin-top: 10px;
+}
