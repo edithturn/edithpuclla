@@ -60,3 +60,7 @@ languageCode = "en-us"
 [markup.goldmark.renderer]
   unsafe = true
 
+[build]
+  environment = "production"
+  disableLiveReload = true
+
