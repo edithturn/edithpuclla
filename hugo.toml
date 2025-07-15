@@ -1,6 +1,6 @@
 baseURL = "https://edithpuclla.com/"
 title   = "Edith Puclla"
-theme   = "papermod"
+themes = ["papermod"]
 languageCode = "en-us"
 
 [taxonomies]
@@ -11,6 +11,7 @@ languageCode = "en-us"
   ShowReadingTime = true
   defaultTheme = "auto"
   customCSS = ["css/custom.css"]
+  canonifyURLs = true
 
 [[menu.main]]
   name = "Home"
