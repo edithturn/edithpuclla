@@ -1,23 +1,25 @@
 ---
-title: "Blog"
+title: "Blogs"
 ---
 
-# ✨ Edith's Blog
-
-Welcome! Read my stories about technology, community, and adventures outside work.
-
-<div style="margin: 20px 0;">
-  <a href="/blog/developer/" style="padding:10px 20px; background:#eab308; color:#222; border-radius:8px; margin-right:8px; text-decoration:none;">💻 Developer</a>
-  <a href="/blog/outside-work/" style="padding:10px 20px; background:#16a34a; color:#fff; border-radius:8px; text-decoration:none;">🌻 Outside Work</a>
+<div class="blog-intro-card">
+  <p class="blog-intro-text">
+    Welcome!
+    Read my stories about <span style='color:#4dd4fc;'>technology</span>, <span style='color:#ffe066;'>community</span>, and <span style='color:#a78bfa;'>adventures outside work</span>.
+  </p>
+  <div style="margin: 20px 0;">
+    <a href="/categories/developer/" class="button-dev">💻 Developer</a>
+    <a href="/categories/outside-work/" class="button-outside">🌻 Outside Work</a>
+  </div>
 </div>
 
----
+<div class="featured-card">
+  <h2>Featured</h2>
+  <a href="https://www.percona.com/blog/managing-postgresql-on-kubernetes-with-percona-everests-rest-api/" class="featured-link">
+    📘 Managing PostgreSQL on Kubernetes with Percona Everest's REST API
+  </a>
+  <a href="https://www.percona.com/blog/easy-way-to-provision-a-postgresql-cluster-on-kubernetes/" class="featured-link">
+    🚀 Easy Way to Provision a PostgreSQL Cluster on Kubernetes
+  </a>
+</div>
 
-## ⭐ Featured
-
-- [📘 Managing PostgreSQL on Kubernetes with Percona Everest's REST API](https://www.percona.com/blog/managing-postgresql-on-kubernetes-with-percona-everests-rest-api/)
-- [🚀 Easy Way to Provision a PostgreSQL Cluster on Kubernetes](https://www.percona.com/blog/easy-way-to-provision-a-postgresql-cluster-on-kubernetes/)
-
----
-
-Below you'll find all my latest posts 👇

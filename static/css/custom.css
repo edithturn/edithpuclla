@@ -668,3 +668,147 @@ body.page-videos .video-grid {
   padding: 0;
   box-sizing: border-box;
 }
+
+.blog-intro-card {
+  background: #23242a;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+  padding: 2rem 2.5rem;
+  margin-bottom: 2rem;
+  font-family: 'Inter','Segoe UI','Nunito Sans',Arial,sans-serif;
+}
+.blog-title {
+  font-size: 2.2rem;
+  margin-top: 0;
+  color: #ffe066;
+  font-family: 'Inter','Segoe UI','Nunito Sans',Arial,sans-serif;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+.blog-intro-text {
+  font-size: 1.15rem;
+  color: #e0e0e0;
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+  font-family: 'Inter','Segoe UI','Nunito Sans',Arial,sans-serif;
+}
+.button-dev, .button-outside {
+  display: inline-block;
+  padding: 0.55em 1.3em;
+  border-radius: 0.4rem;
+  background: #181a20;
+  color: #ffe066;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-right: 1.1rem;
+  border: 1.5px solid #ffe066;
+  text-decoration: none;
+  transition: background 0.18s, color 0.18s, border 0.18s;
+  box-shadow: none;
+  outline: none;
+  letter-spacing: 0.01em;
+}
+.button-outside {
+  color: #4dd4fc;
+  border-color: #4dd4fc;
+}
+.button-dev:hover {
+  background: #23242a;
+  color: #ffe066;
+  border-color: #ffe066;
+  text-decoration: underline;
+}
+.button-outside:hover {
+  background: #23242a;
+  color: #4dd4fc;
+  border-color: #4dd4fc;
+  text-decoration: underline;
+}
+.featured-card {
+  background: #23273b;
+  border-radius: 1.3rem;
+  box-shadow: 0 2px 18px rgba(0,0,0,0.12);
+  border: 1px solid rgba(255,255,255,0.05);
+  padding: 1.7rem 1.4rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.featured-card h2 {
+  font-size: 1.5rem;
+  color: #ffe066;
+  margin-bottom: 1.1rem;
+  font-family: 'Inter','Segoe UI','Nunito Sans',Arial,sans-serif;
+}
+.featured-link {
+  display: block;
+  margin-bottom: 0.6rem;
+  font-size: 1.09rem;
+  color: #4dd4fc;
+  text-decoration: none;
+  transition: color 0.18s;
+  font-family: 'Inter','Segoe UI','Nunito Sans',Arial,sans-serif;
+}
+.featured-link:hover {
+  color: #ffe066;
+  text-decoration: underline;
+}
+.blog-latest-text {
+  font-size: 1.1rem;
+  color: #b0b0b0;
+  margin-bottom: 2.5rem;
+  font-family: 'Inter','Segoe UI','Nunito Sans',Arial,sans-serif;
+  line-height: 1.7;
+}
+
+.socials-grid, .yt-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+.social-card, .yt-card {
+  background: #23242a;
+  border-radius: 1rem;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.08);
+  padding: 0.7rem 1rem;
+  display: flex;
+  align-items: center;
+  min-width: 180px;
+  max-width: 220px;
+  flex: 1 1 180px;
+}
+.social-avatar, .yt-avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  margin-right: 4.2rem; /* increase this value */
+  object-fit: cover;
+  border: 2px solid #ffe066;
+  box-shadow: 0 0 0 4px rgba(255,255,255,0.12);
+}
+.social-name, .yt-name {
+  font-weight: 700;
+  font-size: 1rem;
+  color: #ffe066;
+}
+.yt-handle {
+  font-size: 0.85rem;
+  color: #b0b0b0;
+  margin-bottom: 0.1rem;
+}
+.social-link, .yt-link {
+  color: #4dd4fc;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.18s;
+}
+.social-link:hover, .yt-link:hover {
+  color: #ffe066;
+  text-decoration: underline;
+}
+.social-card > div,
+.yt-card > div {
+  margin-left: 0.5rem;  /* or 1rem for more space */
+  margin-top: 0.1rem;   /* keep a small top margin if you like */
+}
