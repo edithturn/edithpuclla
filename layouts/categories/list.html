@@ -39,6 +39,7 @@
 {{- end }}
 
 {{- $pages := union .RegularPages .Sections }}
+{{- $pages := where $pages "Params.hiddenInList" "!=" true }}
 
 {{- if .IsHome }}
 {{- $pages = where site.RegularPages "Type" "in" site.Params.mainSections }}
