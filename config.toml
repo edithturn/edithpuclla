@@ -1,6 +1,6 @@
 baseURL = "https://edithpuclla.com/"
 title   = "Edith Puclla"
-themes = ["papermod"]
+theme = ["papermod"]
 languageCode = "en-us"
 
 [taxonomies]
@@ -53,8 +53,8 @@ languageCode = "en-us"
   weight = 60
 
 [[menu.main]]
-  name = "Favories"
-  url  = "/categories/outside-work/sport/"
+  name = "Favorites"
+  url  = "/favorites"
   weight = 70
 
 [markup.goldmark.renderer]

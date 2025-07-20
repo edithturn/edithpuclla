@@ -1,60 +1,86 @@
 ---
 title: "Developer Posts"
+draft: false
+type: categories
 ---
 
-## My Latest Developer Blog Posts (External Links)
-
-<ul>
-  <li>
-    <a href="[LINK_PLACEHOLDER_1]">Managing PostgreSQL on Kubernetes with Percona Everest's REST API</a>
-    <span>- June 27, 2025</span>
-  </li>
-  <li>
-    <a href="[LINK_PLACEHOLDER_2]">Using Percona Everest Operator CRDs to Manage Databases in Kubernetes</a>
-    <span>- June 25, 2025</span>
-  </li>
-  <li>
-    <a href="[LINK_PLACEHOLDER_3]">New in Percona Everest 1.6.0: Easily Deploy PMM with a Single Helm Command</a>
-    <span>- May 15, 2025</span>
-  </li>
-  <li>
-    <a href="[LINK_PLACEHOLDER_4]">Percona Everest: An Open Source Solution for MongoDB Sharding and Backups</a>
-    <span>- January 16, 2025</span>
-  </li>
-  <li>
-    <a href="[LINK_PLACEHOLDER_5]">Announcing ARM Support in Percona Operator for MongoDB</a>
-    <span>- May 30, 2024</span>
-  </li>
-  <li>
-    <a href="[LINK_PLACEHOLDER_6]">Switch PostgreSQL Environments Across AWS, GCP, and k3d Using Kubernetes Contexts</a>
-    <span>- April 17, 2024</span>
-  </li>
-  <li>
-    <a href="[LINK_PLACEHOLDER_7]">Ask Me Anything About MySQL 5.7 to 8.0 Post EOL</a>
-    <span>- April 9, 2024</span>
-  </li>
-  <li>
-    <a href="[LINK_PLACEHOLDER_8]">Easy Way to Provision a PostgreSQL Cluster on Kubernetes</a>
-    <span>- March 6, 2024</span>
-  </li>
-  <li>
-    <a href="[LINK_PLACEHOLDER_9]">Backing up and Restoring to AWS S3 With Percona Kubernetes Operators</a>
-    <span>- February 22, 2024</span>
-  </li>
-  <li>
-    <a href="[LINK_PLACEHOLDER_10]">Exploring the Kubernetes Application Lifecycle With Percona</a>
-    <span>- February 20, 2024</span>
-  </li>
-  <li>
-    <a href="[LINK_PLACEHOLDER_11]">Scalable Solutions with Percona Distribution for PostgreSQL (Part 2): Using Citus</a>
-    <span>- October 20, 2023</span>
-  </li>
-  <li>
-    <a href="[LINK_PLACEHOLDER_12]">Scalable Solutions With Percona Distribution for PostgreSQL (Part 1): Set Up Three PostgreSQL Database Instances</a>
-    <span>- October 19, 2023</span>
-  </li>
-  <li>
-    <a href="[LINK_PLACEHOLDER_13]">Contribute to Open Source With Percona and Hacktoberfest</a>
-    <span>- September 21, 2022</span>
-  </li>
-</ul> 
+ <div class="taxonomy-page">
+    <div class="static-posts-section">
+          <a href="https://www.percona.com/blog/managing-postgresql-on-kubernetes-with-percona-everests-rest-api/" target="_blank" class="text-lg font-bold text-yellow-300 hover:underline">
+            📘Managing Managing PostgreSQL on Kubernetes with Percona Everest's REST API
+          </a>
+          <p class="text-sm text-zinc-400 mt-2">Published: June 27, 2025</p>
+    </div>
+    <div class="bg-zinc-900 p-5 rounded-xl shadow hover:shadow-xl transition">
+        <a href="https://www.percona.com/blog/using-percona-everest-operator-crds-to-manage-databases-in-kubernetes/" target="_blank" class="text-lg font-bold text-yellow-300 hover:underline">
+        📘 Using Percona Everest Operator CRDs to Manage Databases in Kubernetes
+        </a>
+        <p class="text-sm text-zinc-400 mt-2">Published: June 25, 2025</p>
+    </div>
+    <div class="bg-zinc-900 p-5 rounded-xl shadow hover:shadow-xl transition">
+        <a href="https://www.percona.com/blog/new-in-percona-everest-1-6-0-easily-deploy-pmm-with-a-single-helm-command/" target="_blank" class="text-lg font-bold text-yellow-300 hover:underline">
+        📘 New in Percona Everest 1.6.0: Easily Deploy PMM with a Single Helm Command
+        </a>
+        <p class="text-sm text-zinc-400 mt-2">Published: May 15, 2025</p>
+    </div>
+    <div class="bg-zinc-900 p-5 rounded-xl shadow hover:shadow-xl transition">
+        <a href="https://www.percona.com/blog/percona-everest-an-open-source-solution-for-mongodb-sharding-and-backups/" target="_blank" class="text-lg font-bold text-yellow-300 hover:underline">
+        📘 Percona Everest: An Open Source Solution for MongoDB Sharding and Backups
+        </a>
+        <p class="text-sm text-zinc-400 mt-2">Published: January 16, 2025</p>
+    </div>
+    <div class="bg-zinc-900 p-5 rounded-xl shadow hover:shadow-xl transition">
+        <a href="https://www.percona.com/blog/announcing-arm-support-in-percona-operator-for-mongodb/" target="_blank" class="text-lg font-bold text-yellow-300 hover:underline">
+        📘 Announcing ARM Support in Percona Operator for MongoDB
+        </a>
+        <p class="text-sm text-zinc-400 mt-2">Published: May 30, 2024</p>
+    </div>
+    <div class="bg-zinc-900 p-5 rounded-xl shadow hover:shadow-xl transition">
+        <a href="https://www.percona.com/blog/switch-postgresql-environments-across-aws-gcp-and-k3d-using-kubernetes-contexts/" target="_blank" class="text-lg font-bold text-yellow-300 hover:underline">
+        📘 Switch PostgreSQL Environments Across AWS, GCP, and k3d Using Kubernetes Contexts
+        </a>
+        <p class="text-sm text-zinc-400 mt-2">Published: April 17, 2024</p>
+    </div>
+    <div class="bg-zinc-900 p-5 rounded-xl shadow hover:shadow-xl transition">
+        <a href="https://www.percona.com/blog/ask-me-anything-about-mysql-5-7-to-8-0-post-eol/" target="_blank" class="text-lg font-bold text-yellow-300 hover:underline">
+        📘 Ask Me Anything About MySQL 5.7 to 8.0 Post EOL
+        </a>
+        <p class="text-sm text-zinc-400 mt-2">Published: April 9, 2024</p>
+    </div>
+    <div class="bg-zinc-900 p-5 rounded-xl shadow hover:shadow-xl transition">
+        <a href="https://www.percona.com/blog/easy-way-to-provision-a-postgresql-cluster-on-kubernetes/" target="_blank" class="text-lg font-bold text-yellow-300 hover:underline">
+        📘 Easy Way to Provision a PostgreSQL Cluster on Kubernetes
+        </a>
+        <p class="text-sm text-zinc-400 mt-2">Published: March 6, 2024</p>
+    </div>
+    <div class="bg-zinc-900 p-5 rounded-xl shadow hover:shadow-xl transition">
+        <a href="https://www.percona.com/blog/backing-up-and-restoring-to-aws-s3-with-percona-kubernetes-operators/" target="_blank" class="text-lg font-bold text-yellow-300 hover:underline">
+        📘 Backing up and Restoring to AWS S3 With Percona Kubernetes Operators
+        </a>
+        <p class="text-sm text-zinc-400 mt-2">Published: February 22, 2024</p>
+    </div>
+    <div class="bg-zinc-900 p-5 rounded-xl shadow hover:shadow-xl transition">
+        <a href="https://www.percona.com/blog/exploring-the-kubernetes-application-lifecycle-with-percona/" target="_blank" class="text-lg font-bold text-yellow-300 hover:underline">
+        📘 Exploring the Kubernetes Application Lifecycle With Percona
+        </a>
+        <p class="text-sm text-zinc-400 mt-2">Published: February 20, 2024</p>
+    </div>
+    <div class="bg-zinc-900 p-5 rounded-xl shadow hover:shadow-xl transition">
+        <a href="https://www.percona.com/blog/scalable-solutions-with-percona-distribution-for-postgresql-part-2-using-citus/" target="_blank" class="text-lg font-bold text-yellow-300 hover:underline">
+        📘 Scalable Solutions with Percona Distribution for PostgreSQL (Part 2): Using Citus
+        </a>
+        <p class="text-sm text-zinc-400 mt-2">Published: October 20, 2023</p>
+    </div>
+    <div class="bg-zinc-900 p-5 rounded-xl shadow hover:shadow-xl transition">
+        <a href="https://www.percona.com/blog/scalable-solutions-with-percona-distribution-for-postgresql-part-1-set-up-three-postgresql-database-instances/" target="_blank" class="text-lg font-bold text-yellow-300 hover:underline">
+        📘 Scalable Solutions With Percona Distribution for PostgreSQL (Part 1): Set Up Three PostgreSQL Database Instances
+        </a>
+        <p class="text-sm text-zinc-400 mt-2">Published: October 19, 2023</p>
+    </div>
+    <div class="bg-zinc-900 p-5 rounded-xl shadow hover:shadow-xl transition">
+        <a href="https://www.percona.com/blog/contribute-to-open-source-with-percona-and-hacktoberfest/" target="_blank" class="text-lg font-bold text-yellow-300 hover:underline">
+        📘 Contribute to Open Source With Percona and Hacktoberfest
+        </a>
+        <p class="text-sm text-zinc-400 mt-2">Published: September 21, 2022</p>
+    </div>
+</div>

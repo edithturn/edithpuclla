@@ -1,0 +1,8 @@
+{{/* layouts/partials/_default/terms.html */}}
+<ul>
+  {{ range .Data.Terms.Alphabetical }}
+    <li>
+      <a href="{{ .Page.RelPermalink }}">{{ .LinkTitle }}</a> ({{ .Count }})
+    </li>
+  {{ end }}
+</ul> 

@@ -3,6 +3,6 @@ title: "Graphics"
 draft: false
 ---
 
-## Page in progress... 🚧
+## Graphics Page in progress... 🚧
 
 Stay tuned! 
