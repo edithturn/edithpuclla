@@ -439,11 +439,6 @@ a:hover, a:focus {
   text-decoration: underline;
 }
 
-.single-post .post-content p {
-  margin-bottom: 1.2em;
-  font-size: 1.05rem;
-}
-
 .single-post .post-content h2 {
   font-size: 2rem;
   color: var(--accent-color);
@@ -591,87 +586,88 @@ a:hover, a:focus {
   margin-top: 10px;
 }
 
-.video-grid {
-  all: unset;
-  display: grid !important;
-  grid-template-columns: 1fr 1fr !important;
-  gap: 2rem;
-  list-style: none;
-  padding: 0;
-  width: 100%;
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.video-grid li {
-  background: none;
-  border: none;
-  padding: 0;
-  margin: 0;
+/* Videos page grid - scoped to videos page only */
+/* Videos page grid - scoped to videos page only */
+/* Expand the content width for the videos page so 3 columns have room */
+body.page-videos .main {
+  max-width: 100% !important;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.video-grid iframe {
-  width: 320px;
-  height: 180px;
-  max-width: 100%;
-  border-radius: 8px;
-}
-
-@media (max-width: 800px) {
-  .video-grid {
-    grid-template-columns: 1fr !important;
-  }
-  .video-grid iframe {
-    width: 100%;
-    height: 200px;
-  }
-}
-
-/* Force video grid to always be two columns on desktop */
-.video-grid {
-  display: grid !important;
-  grid-template-columns: 1fr 1fr !important;
-  gap: 2rem !important;
-  width: 100% !important;
-  max-width: 900px !important;
-  margin: 0 auto !important;
-  padding: 0 !important;
-  box-sizing: border-box !important;
-  background: none !important;
-}
-.video-grid > div {
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: center !important;
-  background: none !important;
-}
-
-body.page-videos .video-grid-container {
-  width: 100vw !important;
-  max-width: 100vw !important;
-  margin-left: 50%;
-  transform: translateX(-50%);
+  justify-content: center; /* center the article container */
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
-
+body.page-videos .post-single {
+  max-width: 1320px !important; /* match outer container */
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  width: 100%;
+}
+body.page-videos .post-header,
+body.page-videos .post-title {
+  text-align: center; /* center page title */
+}
+body.page-videos .post-header { display: flex; justify-content: center; }
+body.page-videos .post-title { width: 100%; }
+body.page-videos .post-content {
+  max-width: none !important; /* remove inner width cap */
+  display: flex;
+  justify-content: center; /* center the grid wrapper */
+}
 body.page-videos .video-grid {
   display: grid !important;
-  grid-template-columns: 1fr 1fr !important;
-  gap: 2rem !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)); /* Three columns on desktop */
+  gap: 1.25rem; /* Slightly tighter gaps to grow videos */
   width: 100%;
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 0;
-  box-sizing: border-box;
+  max-width: 1320px; /* match container */
+  margin: 0 auto; /* Center the grid */
+  justify-items: stretch; /* make each item fill its column equally */
 }
+
+body.page-videos .video-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem; /* Space between video and caption */
+  width: 100%; /* ensure equal widths in all columns */
+}
+
+body.page-videos .video-item iframe {
+  width: 100%;
+  aspect-ratio: 16/9; /* Keeps consistent height ratio */
+  height: auto;
+  border-radius: 8px; /* Rounded corners for iframe */
+}
+body.page-videos .video-item p { text-align: center; }
+
+@media (max-width: 800px) {
+  body.page-videos .video-grid {
+    grid-template-columns: 1fr; /* Single column on smaller screens */
+  }
+}
+
+/* Fallback for when bodyClass isn't present or template wrapper changes */
+.post-content .video-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+  width: 100%;
+  max-width: 1320px; /* match container */
+  margin: 0 auto;
+}
+/* Medium screens: fallback to two columns */
+@media (max-width: 1200px) {
+  body.page-videos .video-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .post-content .video-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 800px) {
+  .post-content .video-grid { grid-template-columns: 1fr; }
+}
+
+/* Removed grid-on-post-content fallback to avoid left column */
 
 .blog-intro-card {
   background: #23242a;
-  border-radius: 1.5rem;
+  border-radius: 0.50rem; /* reduced 50% */
   box-shadow: 0 4px 24px rgba(0,0,0,0.12);
   padding: 2rem 2.5rem;
   margin-bottom: 2rem;
@@ -726,7 +722,7 @@ body.page-videos .video-grid {
 }
 .featured-card {
   background: #23273b;
-  border-radius: 1.3rem;
+  border-radius: 0.65rem; /* reduced 50% */
   box-shadow: 0 2px 18px rgba(0,0,0,0.12);
   border: 1px solid rgba(255,255,255,0.05);
   padding: 1.7rem 1.4rem;

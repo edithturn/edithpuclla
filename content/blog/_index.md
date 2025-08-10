@@ -5,7 +5,7 @@ title: "Blogs"
 <div class="blog-intro-card">
   <p class="blog-intro-text">
     Welcome!
-    Read my stories about <span style='color:#4dd4fc;'>technology</span>, <span style='color:#ffe066;'>community</span>, and <span style='color:#a78bfa;'>adventures outside work</span>.
+    Read my stories about technology, community, and adventures outside work.
   </p>
   <div style="margin: 20px 0;">
     <a href="/categories/developer/" class="button-dev">💻 Developer</a>

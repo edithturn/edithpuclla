@@ -1,21 +1,10 @@
 {{ define "main" }}
-<!-- Only add the page-videos class for the videos page -->
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    document.body.classList.add('page-videos');
-  });
-</script>
 <article class="post-single">
   <header class="post-header">
     <h1 class="post-title entry-hint-parent">{{ .Title }}</h1>
   </header>
-  <div class="post-content">
-    <h2>📺 Latest YouTube Videos</h2>
-    <div class="video-grid-container">
-      <div class="video-grid">
-        {{ .Content }}
-      </div>
-    </div>
+  <div class="">
+    {{ .Content }}  <!-- Content contains the <div class="video-grid"> wrapper -->
   </div>
 </article>
-{{ end }} 
+{{ end }}
