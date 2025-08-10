@@ -812,3 +812,20 @@ body.page-videos .video-grid {
   margin-left: 0.5rem;  /* or 1rem for more space */
   margin-top: 0.1rem;   /* keep a small top margin if you like */
 }
+
+/* Giscus Comments Styling */
+.giscus-comments {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid #444;
+}
+
+.giscus {
+  color-scheme: dark;
+}
+
+/* Dark theme adjustments for Giscus */
+.giscus-frame {
+  border-radius: 8px;
+  background: #23242a;
+}

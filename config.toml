@@ -13,6 +13,21 @@ languageCode = "en-us"
   customCSS = ["css/custom.css"]
   canonifyURLs = true
 
+  # Giscus Comments
+  [params.giscus]
+    repo = "edithturn/edithpuclla"  # Replace with your GitHub username/repository
+    repoId = "R_kgDOOnsDoA"  # You'll get this from giscus.app
+    category = "General"
+    categoryId = "DIC_kwDOOnsDoM4CuAQh"  # You'll get this from giscus.app
+    mapping = "pathname"
+    strict = "0"
+    reactionsEnabled = "1"
+    emitMetadata = "0"
+    inputPosition = "bottom"
+    theme = "preferred_color_scheme"
+    lang = "en"
+    loading = "lazy"
+
 [[menu.main]]
   name = "Home"
   url  = "/"

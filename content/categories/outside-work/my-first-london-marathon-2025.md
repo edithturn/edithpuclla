@@ -5,6 +5,7 @@ draft: false
 categories: ["outside-work"]
 thumbnail: "/img/london-marathon-2025/image01.jpg"
 weight: -1 
+comments: true
 ---
 
 The TCS London Marathon is one of the most iconic running events in the world. Each year, more than 40,000 runners take on the 26.2-mile (42.2 km) route through the streets of London, from Greenwich Park to Buckingham Palace.
