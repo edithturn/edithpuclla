@@ -50,7 +50,7 @@ In this plan, a post-race recovery strategy was included so we could continue ru
 I felt really grateful to have Ben as our coach. He was always available to answer questions, provide feedback, and motivate us. He was also very supportive of our fundraising efforts. This is [Benjamin's  LinkedIn profile](https://www.linkedin.com/in/ben-b-35744651/) in case you want to connect with him.
 
 
-We also had a group chat with all NSPCC runners. Our coaches, including another amazing one, [Steven Campbell](https://www.strava.com/athletes/12990691), were always checking our training logs, keeping us on track. We shared our experiences, motivated one another, celebrated small victories, and supported each other through the tough moments.
+We also had a group chat with all NSPCC runners. Our coaches, including another amazing one, [Stephen Campbell](https://www.strava.com/athletes/12990691), were always checking our training logs, keeping us on track. We shared our experiences, motivated one another, celebrated small victories, and supported each other through the tough moments.
 
 ![Running training group](/img/london-marathon-2025/image05.jpg)
 
