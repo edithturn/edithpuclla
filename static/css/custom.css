@@ -829,3 +829,5 @@ body.page-videos .video-grid {
   border-radius: 8px;
   background: #23242a;
 }
+
+/* Removed two-column category CSS (reverted to original grid) */

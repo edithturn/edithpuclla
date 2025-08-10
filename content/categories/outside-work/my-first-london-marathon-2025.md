@@ -8,7 +8,7 @@ weight: -1
 comments: true
 ---
 
-The TCS London Marathon is one of the most iconic running events in the world. Each year, more than 40,000 runners take on the 26.2-mile (42.2 km) route through the streets of London, from Greenwich Park to Buckingham Palace.
+The [TCS London Marathon](https://www.tcs.com/en-gb/london-marathon) is one of the most iconic running events in the world. Each year, more than 40,000 runners take on the 26.2-mile (42.2 km) route through the streets of London, from Greenwich Park to Buckingham Palace.
 
 This year, the marathon took place on Sunday, April 27th, guiding runners along a 26.2-mile route through the heart of the capital. The race began in Greenwich, with participants setting off from one of five start lines based on their assigned wave. From there, the course passed some of London's most iconic landmarks, including the Cutty Sark, Tower Bridge, and Canary Wharf, offering scenic views and unforgettable crowd support.
 
@@ -25,7 +25,7 @@ This year, the TCS London Marathon had a record-breaking 56,640 runners finish t
 
 Some people run for a personal challenge, others to break records, and many to raise money for causes they care about. I was here to gain experience, and I was super motivated knowing that I could also support a charity I deeply identify with.
 
-I ran this year's marathon as part of Team NSPCC, a UK charity that protects children from abuse and supports families across the country.
+I ran this year's marathon as part of [Team NSPCC](https://www.nspcc.org.uk/charity-events/tcs-london-marathon/), a UK charity that protects children from abuse and supports families across the country.  
 
 ![NSPCC team runners](/img/london-marathon-2025/image03.jpg)
 
@@ -37,7 +37,7 @@ If you're wondering how to run the London Marathon for the first time and you do
 
 ## The Training Journey: 8 Months of Preparation
 
-I started my training journey eight months before race day. NSPCC paired us with a professional coach, Benjamin Barwick, who guided our entire group through training.
+I started my training journey eight months before race day. NSPCC paired us with a professional coach, [Benjamin Barwick](https://www.linkedin.com/in/ben-b-35744651/), who guided our entire group through training.
 
 Benjamin helped us with:
 *   A personalized training plan for each of us.
@@ -46,7 +46,7 @@ Benjamin helped us with:
 
 In this plan, a post-race recovery strategy was included so we could continue running and stay active after the marathon (after proper rest, of course) instead of collapsing and giving up forever, hehehe.
 
-We also had a group chat with all NSPCC runners. Our coaches, including another amazing one, Steven Campell, were always checking our training logs, keeping us on track. We shared our experiences, motivated one another, celebrated small victories, and supported each other through the tough moments.
+We also had a group chat with all NSPCC runners. Our coaches, including another amazing one, [Steven Campbell](https://www.strava.com/athletes/12990691), were always checking our training logs, keeping us on track. We shared our experiences, motivated one another, celebrated small victories, and supported each other through the tough moments.
 
 ![Running training group](/img/london-marathon-2025/image05.jpg)
 
