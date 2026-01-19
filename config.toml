@@ -48,8 +48,6 @@ languageCode = "en-us"
   url  = "/categories/outside-work/"
   parent = "blog"
   weight = 20
-
-
 [[menu.main]]
   name = "Videos"
   url  = "/videos"
