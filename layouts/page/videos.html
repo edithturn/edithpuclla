@@ -1,10 +1,7 @@
 {{ define "main" }}
 <article class="post-single">
-  <header class="post-header">
-    <h1 class="post-title entry-hint-parent">{{ .Title }}</h1>
-  </header>
-  <div class="">
-    {{ .Content }}  <!-- Content contains the <div class="video-grid"> wrapper -->
+  <div class="post-content">
+    {{ .Content | safeHTML }}  <!-- Content contains the channel sections and video grids -->
   </div>
 </article>
 {{ end }}

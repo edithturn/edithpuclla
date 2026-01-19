@@ -42,6 +42,11 @@ This is my personal website where I share blog posts, music, videos, graphics, a
    ```
    
    The site will be available at `http://localhost:1313`
+   
+   To run on a specific port and bind to all interfaces:
+   ```bash
+   hugo server --port 13131 --bind 0.0.0.0
+   ```
 
 3. **Build for production**
    ```bash
@@ -92,6 +97,10 @@ The site is automatically deployed to Netlify. The build command is configured i
 - **Theme:** PaperMod theme is located in `themes/papermod/`
 - **Custom CSS:** Add custom styles in `static/css/custom.css`
 - **Configuration:** Edit `config.toml` for site settings
+
+## Configuration Notes
+
+- **HTML Rendering:** The site has `unsafe = true` enabled in `config.toml` to allow iframes in the Music and Videos pages (Spotify embeds, YouTube videos, etc.). Since all content is controlled by the site owner, this is safe for this use case.
 
 ## License
 

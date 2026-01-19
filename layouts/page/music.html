@@ -1,0 +1,9 @@
+{{- define "main" }}
+<article class="post-single">
+  {{- if .Content }}
+  <div class="post-content">
+    {{ .Content | safeHTML }}
+  </div>
+  {{- end }}
+</article>
+{{- end }}

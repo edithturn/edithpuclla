@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="{{ site.LanguageCode | default "en" }}">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} | {{ site.Title }}{{ end }}</title>
+    <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ site.Params.description }}{{ end }}">
+    {{ partial "extend_head.html" . }}
+</head>
+<body>
+  <div class="main-flex-row">
+    {{ partial "profile_sidebar.html" . }}
+    <div class="main-banner-bio">
+      {{ partial "navigation.html" . }}
+      <div class="main-content">
+        {{ block "main" . }}{{ end }}
+      </div>
+    </div>
+  </div>
+</body>
+</html>
