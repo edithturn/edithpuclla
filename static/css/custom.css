@@ -1202,14 +1202,103 @@ body.page-videos .video-item p { text-align: center; }
   max-width: 220px;
   flex: 1 1 180px;
 }
+.social-avatar-wrapper {
+  position: relative;
+  margin-right: 0.75rem;
+  flex-shrink: 0;
+}
+
 .social-avatar, .yt-avatar {
-  width: 38px;
-  height: 38px;
+  width: 56px;
+  height: 56px;
   border-radius: 50%;
-  margin-right: 4.2rem; /* increase this value */
   object-fit: cover;
   border: 2px solid #ffe066;
   box-shadow: 0 0 0 4px rgba(255,255,255,0.12);
+  display: block;
+}
+
+.social-icon-badge {
+  position: absolute;
+  bottom: -4px;
+  right: -4px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #23242a;
+  border: 2px solid #23242a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+}
+
+.social-icon-badge svg {
+  width: 18px;
+  height: 18px;
+}
+
+.social-icon-badge.linkedin-icon {
+  background: #0077b5;
+  border-color: #0077b5;
+}
+
+.social-icon-badge.linkedin-icon svg {
+  fill: #ffffff;
+}
+
+.social-icon-badge.x-icon {
+  background: #000000;
+  border-color: #000000;
+}
+
+.social-icon-badge.x-icon svg {
+  fill: #ffffff;
+}
+
+.social-icon-badge.github-icon {
+  background: #181717;
+  border-color: #181717;
+}
+
+.social-icon-badge.github-icon svg {
+  fill: #ffffff;
+}
+
+.social-icon-badge.mastodon-icon {
+  background: #6364ff;
+  border-color: #6364ff;
+}
+
+.social-icon-badge.mastodon-icon svg {
+  fill: #ffffff;
+}
+
+.social-icon-badge.bluesky-icon {
+  background: #0285ff;
+  border-color: #0285ff;
+}
+
+.social-icon-badge.bluesky-icon svg {
+  fill: #ffffff;
+}
+
+.social-icon-badge.devto-icon {
+  background: #0a0a0a;
+  border-color: #0a0a0a;
+}
+
+.social-icon-badge.devto-icon svg {
+  fill: #ffffff;
+}
+
+.social-icon-badge.sessionize-icon {
+  background: #ff6b35;
+  border-color: #ff6b35;
+}
+
+.social-icon-badge.sessionize-icon svg {
+  fill: #ffffff;
 }
 .social-name, .yt-name {
   font-weight: 700;
@@ -1354,6 +1443,174 @@ body.page-videos .video-item p { text-align: center; }
   .yt-channels-overview {
     grid-template-columns: 1fr;
   }
+}
+
+/* Dev.to sections */
+.devto-profile-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: #23242a;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.devto-avatar-wrapper {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.devto-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ffe066;
+  display: block;
+}
+
+.devto-badge {
+  position: absolute;
+  bottom: -2px;
+  right: -2px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #000000;
+  border: 2px solid #ffe066;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.devto-badge svg {
+  width: 16px;
+  height: 16px;
+  fill: #ffffff;
+}
+
+.devto-profile-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.devto-username {
+  color: #ffe066;
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.devto-platform {
+  color: #5eead4;
+  font-size: 0.9rem;
+  line-height: 1.2;
+}
+
+.devto-section {
+  margin-bottom: 3rem;
+  padding: 1.5rem;
+  background: #23242a;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.devto-posts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-height: 350px; /* Height to show approximately 2 posts */
+  overflow-y: auto;
+  padding-right: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Custom scrollbar for dev.to posts */
+.devto-posts-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.devto-posts-list::-webkit-scrollbar-track {
+  background: #1a1a1a;
+  border-radius: 3px;
+}
+
+.devto-posts-list::-webkit-scrollbar-thumb {
+  background: #d8a01f;
+  border-radius: 3px;
+}
+
+.devto-posts-list::-webkit-scrollbar-thumb:hover {
+  background: #ffe066;
+}
+
+.devto-post-item {
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.devto-post-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.devto-post-item h4 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.devto-post-item h4 a {
+  color: #80cbc4;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.devto-post-item h4 a:hover {
+  color: #ffe066;
+}
+
+.devto-post-desc {
+  color: #b0b0b0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin: 0.5rem 0;
+}
+
+.devto-post-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.75rem;
+  font-size: 0.85rem;
+}
+
+.devto-post-date {
+  color: #888;
+}
+
+.devto-read-more {
+  color: #d8a01f;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.devto-read-more:hover {
+  color: #ffe066;
+}
+
+.devto-profile-link {
+  color: #d8a01f;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.devto-profile-link:hover {
+  color: #ffe066;
 }
 
 /* Removed two-column category CSS (reverted to original grid) */
