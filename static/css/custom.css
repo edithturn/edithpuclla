@@ -1613,4 +1613,372 @@ body.page-videos .video-item p { text-align: center; }
   color: #ffe066;
 }
 
+/* Graphics page styles */
+.graphics-featured {
+  margin-bottom: 3rem;
+}
+
+.graphics-featured-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 768px) {
+  .graphics-featured-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.graphics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.graphic-item {
+  background: #23242a;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.graphic-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  border-color: rgba(216, 161, 31, 0.3);
+}
+
+
+.graphic-thumbnail {
+  position: relative;
+  width: 100%;
+  padding-top: 75%; /* 4:3 aspect ratio */
+  background: #1a1a1a;
+  overflow: hidden;
+}
+
+.graphic-thumbnail img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.graphic-item:hover .graphic-thumbnail img {
+  transform: scale(1.05);
+}
+
+.graphic-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.graphic-item:hover .graphic-overlay {
+  opacity: 1;
+}
+
+.graphic-view {
+  color: #ffe066;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.graphic-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  z-index: 2;
+}
+
+.graphic-badge.viral {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: #fff;
+}
+
+.graphic-type-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  backdrop-filter: blur(4px);
+}
+
+.graphic-type-badge.image-badge {
+  background: rgba(59, 130, 246, 0.8);
+  color: #fff;
+}
+
+.graphic-type-badge.pdf-badge {
+  background: rgba(220, 38, 38, 0.8);
+  color: #fff;
+}
+
+.graphic-type-badge svg {
+  width: 18px;
+  height: 18px;
+  stroke: currentColor;
+  fill: none;
+}
+
+.graphic-pages {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  padding: 4px 10px;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  z-index: 2;
+}
+
+.graphic-pdf-placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #d8a01f;
+}
+
+.graphic-pdf-placeholder svg {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 0.5rem;
+  stroke: #d8a01f;
+}
+
+.graphic-pdf-placeholder span {
+  color: #d8a01f;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.graphic-info {
+  padding: 1.25rem;
+}
+
+.graphic-info h3 {
+  color: #80cbc4;
+  font-size: 1.1rem;
+  margin: 0 0 0.5rem 0;
+}
+
+.graphic-info p {
+  color: #b0b0b0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin: 0 0 0.75rem 0;
+}
+
+.graphic-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+/* Graphic Modal */
+.graphic-modal {
+  display: none;
+  position: fixed;
+  z-index: 10000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.95);
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.graphic-modal-content {
+  position: relative;
+  max-width: 90%;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.graphic-modal-content img {
+  max-width: 100%;
+  max-height: 70vh;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.graphic-modal-content iframe {
+  width: 90vw;
+  height: 80vh;
+  border: none;
+  border-radius: 8px;
+}
+
+.graphic-modal-close {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 10001;
+  transition: color 0.2s ease;
+}
+
+.graphic-modal-close:hover {
+  color: #ffe066;
+}
+
+.graphic-modal-nav {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.graphic-nav-btn {
+  background: rgba(216, 161, 31, 0.2);
+  border: 2px solid #d8a01f;
+  color: #ffe066;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+.graphic-nav-btn:hover {
+  background: rgba(216, 161, 31, 0.4);
+  transform: translateY(-2px);
+}
+
+.graphic-modal-info {
+  margin-top: 1.5rem;
+  text-align: center;
+  max-width: 600px;
+}
+
+.graphic-modal-info h3 {
+  color: #ffe066;
+  font-size: 1.5rem;
+  margin: 0 0 0.5rem 0;
+}
+
+.graphic-modal-info p {
+  color: #e0e0e0;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0 0 1rem 0;
+}
+
+.graphic-download-btn {
+  display: inline-block;
+  background: #d8a01f;
+  color: #1a1a1a;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.graphic-download-btn:hover {
+  background: #ffe066;
+  transform: translateY(-2px);
+}
+
+/* Tag colors for graphics */
+.tag-docker {
+  background: rgba(13, 183, 230, 0.15) !important;
+  color: #0db7e6 !important;
+}
+
+.tag-architecture {
+  background: rgba(99, 102, 241, 0.15) !important;
+  color: #a5b4fc !important;
+}
+
+.tag-kubernetes {
+  background: rgba(0, 172, 193, 0.15) !important;
+  color: #4dd0e1 !important;
+}
+
+.tag-databases {
+  background: rgba(147, 51, 234, 0.15) !important;
+  color: #c084fc !important;
+}
+
+.tag-community {
+  background: rgba(251, 191, 36, 0.15) !important;
+  color: #fcd34d !important;
+}
+
+.tag-networking {
+  background: rgba(59, 130, 246, 0.15) !important;
+  color: #93c5fd !important;
+}
+
+.tag-patterns {
+  background: rgba(168, 85, 247, 0.15) !important;
+  color: #d8b4fe !important;
+}
+
+@media (max-width: 768px) {
+  .graphics-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .graphic-modal-content {
+    max-width: 95%;
+  }
+  
+  .graphic-modal-close {
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+  }
+  
+  .graphic-modal-nav {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .graphic-nav-btn {
+    width: 100%;
+  }
+}
+
 /* Removed two-column category CSS (reverted to original grid) */
