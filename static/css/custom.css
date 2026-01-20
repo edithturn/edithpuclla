@@ -1982,3 +1982,134 @@ body.page-videos .video-item p { text-align: center; }
 }
 
 /* Removed two-column category CSS (reverted to original grid) */
+
+/* Favorite People Styles */
+.favorites-people-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.favorite-person-card {
+  background: #23242a;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.favorite-person-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+  border-color: rgba(255, 224, 102, 0.2);
+}
+
+.favorite-person-avatar-wrapper {
+  position: relative;
+  margin-bottom: 1rem;
+  align-self: flex-start;
+}
+
+.favorite-person-avatar-placeholder {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: #2a2a2a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #ffe066;
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.12);
+}
+
+.favorite-person-avatar-placeholder svg {
+  width: 32px;
+  height: 32px;
+  color: #ffe066;
+}
+
+.favorite-person-avatar-wrapper img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ffe066;
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.12);
+  display: block;
+}
+
+.favorite-person-icon-badge {
+  position: absolute;
+  bottom: -4px;
+  right: -4px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #23242a;
+  border: 2px solid #23242a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+.favorite-person-icon-badge svg {
+  width: 18px;
+  height: 18px;
+}
+
+.favorite-person-icon-badge.linkedin-icon {
+  background: #0077b5;
+  border-color: #0077b5;
+}
+
+.favorite-person-icon-badge.linkedin-icon svg {
+  fill: #ffffff;
+}
+
+.favorite-person-info {
+  flex: 1;
+}
+
+.favorite-person-name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #ffe066;
+  margin: 0 0 0.75rem 0;
+}
+
+.favorite-person-bio {
+  color: #e0e0e0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0 0 1rem 0;
+}
+
+.favorite-person-link {
+  color: #4dd4fc;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: color 0.18s;
+  display: inline-block;
+}
+
+.favorite-person-link:hover {
+  color: #ffe066;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .favorites-people-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .favorite-person-card {
+    padding: 1.25rem;
+  }
+}
